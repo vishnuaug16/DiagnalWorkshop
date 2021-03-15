@@ -9,6 +9,7 @@ exports.handler = function (event, context, callback) {
     TITLE: "title",
     DESCRIPTION: "description",
     IMAGE: "image",
+    SCRIPT : "script"
   };
 
   /********************
@@ -38,7 +39,7 @@ exports.handler = function (event, context, callback) {
       // getHtmlData gets the HTML content of the webpage.
       getHtmlData(url).then((htmldata) => {
         // getHeadTags sets the meta informations whuch are not present undet og:meta
-        getHeadTags(htmldata, dataOgData).then((finalData) => {
+        getHeadTags(htmldata, dataMeta).then((finalData) => {
           callback(null, {
             statusCode: 200,
             body: JSON.stringify(finalData),
@@ -95,6 +96,7 @@ exports.handler = function (event, context, callback) {
           dataOgData.script = elm.attribs.nonce;
         }
       });
+      console.log("Debug headTags", dataOgData);
       console.log("headTags", dataOgData);
       resolve(dataOgData);
     });

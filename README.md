@@ -7,20 +7,14 @@ they are not set, the API must parse the webpage to get relevant details such as
 # API :: https://uozstipovc.execute-api.us-east-1.amazonaws.com/dev/fetchMetaData
 #  Body ::
 {
-"url": "https://www.diagnal.com/"
+"url": "https://github.com/vishnuaug16/DiagnalWorkshop/tree/develop"
 }
 
 #  Response :: 
 
 {
-    "viewport": "width=device-width, initial-scale=1",
-    "og:site_name": "DIAGNAL",
-    "og:title": "DIAGNAL",
-    "og:url": "https://www.diagnal.com",
-    "og:type": "website",
-    "twitter:title": "DIAGNAL",
-    "twitter:url": "https://www.diagnal.com",
-    "twitter:card": "summary"
+    "title": "vishnuaug16/DiagnalWorkshop",
+    "description": "Contribute to vishnuaug16/DiagnalWorkshop development by creating an account on GitHub."
 }
 
 #  Sample 2 ::

@@ -11,9 +11,9 @@ exports.handler = function (event, context, callback) {
     IMAGE: "image",
   };
 
-  /********************/
-  // input Validation
-  /********************/
+  /********************
+  input Validation
+  *******************/
   if (
     JSON.parse(event.body) &&
     JSON.parse(event.body).url == undefined &&

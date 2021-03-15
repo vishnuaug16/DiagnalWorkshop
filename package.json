@@ -1,0 +1,24 @@
+{
+  "name": "diagnalworkshop",
+  "version": "1.0.0",
+  "description": "Serverless Metadata Scrapping From A Given URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vishnuaug16/DiagnalWorkshop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vishnuaug16/DiagnalWorkshop/issues"
+  },
+  "homepage": "https://github.com/vishnuaug16/DiagnalWorkshop#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "metaget": "^1.0.7",
+    "request": "^2.88.2"
+  }
+}
